@@ -37,7 +37,7 @@
 
  We are in the loop, and the lowest number in one. Every positive integer, if you apply these rules,
  will eventually end up in the four, two, one loop. Commonly called Collatz conjecture or 3N+1
- And the number you get by applying 3x+1 are called hailstone numbers, beacuse they go up and down like hailstones
+ and the number you get by applying 3x+1 are called hailstone numbers, beacuse they go up and down like hailstones
 
 * Press Enter to See the loop
 
