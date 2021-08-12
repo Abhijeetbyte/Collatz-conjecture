@@ -1,8 +1,8 @@
-
-number = int(input(" Pick a number 1 2 3 4 5 6 7 8 9  : "))
+print('\n')
+number = int(input(" Pick a number & Press enter 1 2 3 4 5 6 7 8 9  :  "))
 print('\n')
 
-print(number, ' Good choise ')
+print('  ',number, ' Good choise ')
 print('\n')
 print(' Now we are going to apply two rules')
 print(' if the number is odd, we multiply by three and add one [ x3+1 ]')
@@ -19,10 +19,10 @@ while True:
 
      if (number%2) == 0: #modulus operator
          number = int (number/2)    #if number is even make it odd
-         print(number)
+         print('          ',number)
      else:
          number = int (number*3+1) #if number is odd make it even
-         print(number) 
+         print('          ',number) 
 
      if (number == 1):
          print('\n')
