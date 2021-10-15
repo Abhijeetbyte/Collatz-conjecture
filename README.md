@@ -1,7 +1,7 @@
 # Hailstone-sequence
 
 # Demo
- Pick a number 1 2 3 4 5 6 7 8 9  : 7
+* Pick a number & Press enter 1 2 3 4 5 6 7 8 9... >>>  7
 
 
 7  Good choise
@@ -39,10 +39,14 @@
  will eventually end up in the four, two, one loop. Commonly called Collatz conjecture or 3N+1
  and the number you get by applying 3x+1 are called hailstone numbers, beacuse they go up and down like hailstones
 
-* Press Enter to See the loop
+* Iterations :  16
+
+![Plotted Graph](pyplot.png)
+
+* Press Enter to See the loop ; Close the graph first
 
 ->  4
     2
     1
     
-* Press Enter to See the loop   
+* Press Enter to See the loop ; Close the graph first   
