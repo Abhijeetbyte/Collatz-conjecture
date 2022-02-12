@@ -5,7 +5,7 @@ Prerequisites:
 * Your computer must be running Python3.9 or newer.
 
 ### Dependencies
-
+* Below is the library that has been used. You must need to install, before executing the programme
 ```
 pip install matplotlib
 
@@ -13,7 +13,8 @@ pip install matplotlib
 #
 
 ### Demo
-* Pick a number & Press enter 1 2 3 4 5 6 7 8 9... >>>  7
+
+Pick a number & Press enter 1 2 3 4 5 6 7 8 9... >>>  7
 
 
 7  Good choise
@@ -26,7 +27,7 @@ pip install matplotlib
 
  Now we keep applying these two rules.
 
-*   Press Enter to begin !
+   Press Enter to begin !
 
 
 -> 22
@@ -46,24 +47,26 @@ pip install matplotlib
    2
    1
    
-* Iterations :  16
+  Iterations :  16
 #
  We are in the loop, and the lowest number in one. Every positive integer, if you apply these rules,
  will eventually end up in the four, two, one loop. Commonly called Collatz conjecture or 3N+1
  and the number you get by applying 3x+1 are called hailstone numbers, beacuse they go up and down like hailstones
+
+  Press Enter to See the loop & Plotted graph
 #
-
-
 ![Plotted Graph](pyplot.png)
+#
+   Close the graph window first !
 
-* Press Enter to See the loop ; Close the graph first
+loop begins !
 
 ->  4
     2
     1
     
-* Press Enter to See the loop ; Close the graph first  
-
+  Press Enter to See the loop & Plotted graph
+#
 # License
 
 Copyright © Abhijeet kumar. All rights reserved.
