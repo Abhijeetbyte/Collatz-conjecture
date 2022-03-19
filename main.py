@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 #Graph setup
 
-plt.xlabel('iterations:')
+plt.xlabel('iteration')
 plt.ylabel('value')
 plt.title('Graph')
 
@@ -58,7 +58,7 @@ while True:
          print('\n')
          print(" We are in the loop, and the lowest number in one. Every positive integer, if you apply these rules,")
          print(" will eventually end up in the 4, 2, 1 loop. Commonly called Collatz conjecture or 3N+1.")
-         print(" And the number you get by applying 3x+1 are called hailstone numbers, beacuse they go up \n and down like hailstones inside a cloud \n")
+         print(" And the number you get by applying 3x+1 are called hailstone numbers \n")
          print(" Iterations: ",iterations ,'\n') 
          loopcontinue=str(input(' Press enter to see the graph & loop \n')) # just press enter key
          print(' Close the graph window first !') # close graph window to continue the loop
