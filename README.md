@@ -35,40 +35,12 @@ Iterations :  16
 ```
 
 
-
-
- 
-
-
-
-
-
-
-
-
-
-
-  
-  
- 
- 
-   
-   
-   
-   
-   
-  
-   
-   
-   
-   
-
 #
  We are in the loop, and the lowest number in one. Every positive integer, if you apply these rules,
- will eventually end up in the four, two, one loop.</br>
+ will eventually end up in the 4, 2, 1 loop.</br>
  and the number you get are called **hailstone numbers**, beacuse they go up and down like hailstones
 
- ` Press Enter to See the loop & Plotted graph`
+ `Press enter to see the graph & loop`
 #
 ![Plotted Graph](pyplot.png)
 #
@@ -76,18 +48,15 @@ Iterations :  16
 ```
 Close the graph window first !
 
-loop begins !
+ Loop....!
 
 ->  4 2 1
 
 Iterations: 19
 
-Press Enter to See the loop & Plotted graph
+Press enter to see the graph & loop
 
 ```
-    
-    
-    
 
 #
 # License
