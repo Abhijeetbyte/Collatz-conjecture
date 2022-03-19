@@ -56,7 +56,7 @@ while True:
 
      if (number == 1): # Stop !!
          print('\n')
-         print(" We are in the loop, and the lowest number in one. Every positive integer, if you apply these rules,")
+         print(" We are in the loop, and the lowest number is one. Every positive integer, if you apply these rules,")
          print(" will eventually end up in the 4, 2, 1 loop. Commonly called Collatz conjecture or 3N+1.")
          print(" And the number you get by applying 3x+1 are called hailstone numbers \n")
          print(" Iterations: ",iterations ,'\n') 
