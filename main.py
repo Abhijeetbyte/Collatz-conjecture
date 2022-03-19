@@ -1,70 +1,71 @@
 import matplotlib.pyplot as plt
 
 #Graph setup
+
 plt.xlabel('iterations:')
 plt.ylabel('value')
 plt.title('Graph')
 
+#Interaction
+
 print('\n')
-number = int(input(" Pick a number & Press enter 1 2 3 4 5 6 7 8 9... >>>  "))
+number = int(input(" Pick a number & Press enter 1 2 3 4 5 6 7 8 9... >>> "))
 print('\n')
 
-print('  ',number, ' Good choise ')
-print('\n')
-print(""" Now we are going to apply two rules.
- If the number is odd, we multiply by three and add one [ x3+1 ]
+print('  ',number, ' Good choise \n')
+
+print(""" Now we are going to apply two rules \n
+ If the number is odd, we multiply by three and add one [ x3+1 ] \n
  If the number is even, we divide by two [ /2 ]
-""")
-print(' Now we keep applying these two rules.')
-print('.')
-start=str(input('    Press Enter to begin !'))
-print('\n')
+\n""")
+print(' Now we keep applying these two rules \n')
+
+start=str(input('    Press Enter to begin ! \n'))
+
+#Variables
 
 iterations = int(0) # to count iteration in while loop
-
 List_iteration= [0] # empty list for  iterations ; list to plot
-
 List_number= [0] # empty list for  iterations ; list to plot
 
-
+#infinity loop
 
 while True:
-     
-    #infinity loop
-
 
      if (number%2) == 0: #modulus operator to get the remainder
           
          number = int (number/2)    #if number is even make it odd
          print("          ",number)
+         
          iterations = iterations +1 # Increment
          
-         List_number.append(number) # Add number/value in list every time
-         List_iteration.append(iterations) # Add Increment in list every time
-         plt.plot(List_iteration, List_number) #Pass varibles arguments to plot
+         List_number.append(number) # Add number/value in list, every time
+         List_iteration.append(iterations) # Add iteration value/increment in list, every timee
+         plt.plot(List_iteration, List_number , 'b-o') #Pass varibles as arguments to plot, with graph style
          
      else:
          number = int (number*3+1) #if number is odd make it even
          print("          ",number)
+         
          iterations = iterations +1 # Increments
          
-         List_number.append(number) # Add number/value in list every time
-         List_iteration.append(iterations) # Add Increment in list every time
-         plt.plot(List_iteration, List_number) #Pass varibles as arguments to plot
+         List_number.append(number) # Add number/value in list, every time
+         List_iteration.append(iterations) # Add iteration value/increment in list, every time
+         plt.plot(List_iteration, List_number,'b-o') #Pass varibles as arguments to plot, with graph style
          
 
-     if (number == 1):
+     if (number == 1): # Stop !!
          print('\n')
          print(" We are in the loop, and the lowest number in one. Every positive integer, if you apply these rules,")
-         print(" will eventually end up in the four, two, one loop. Commonly called Collatz conjecture or 3N+1.")
-         print(" And the number you get by applying 3x+1 are called hailstone numbers, beacuse they go up and down like hailstones inside a cloud")
-         print('')
-         print(' Iterations : ',iterations)
-         print('\n')
-         print(' Press Enter to See the loop & Plotted graph')
-         loopcontinue=str(input()) # just press enter key
-         print(' Close the graph window first ! ') # close popup graph window to continue the loop
+         print(" will eventually end up in the 4, 2, 1 loop. Commonly called Collatz conjecture or 3N+1.")
+         print(" And the number you get by applying 3x+1 are called hailstone numbers, beacuse they go up \n and down like hailstones inside a cloud \n")
+         print(" Iterations: ",iterations ,'\n') 
+         loopcontinue=str(input(' Press enter to see the graph & loop \n')) # just press enter key
+         print(' Close the graph window first !') # close graph window to continue the loop
          plt.show() # show ploted graph
-         print('\n')
-         print('       loop begins !')
-         print('\n')
+
+         #Below line is not necessary
+         print(3*'\n')
+         print(' Loop.... ! \n')
+         
+
