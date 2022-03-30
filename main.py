@@ -40,8 +40,12 @@ while True:
          iterations = iterations +1 # Increment
          
          List_number.append(number) # Add number/value in list, every time
-         List_iteration.append(iterations) # Add iteration value/increment in list, every timee
+         List_iteration.append(iterations) # Add iteration value/increment in list, every time
          plt.plot(List_iteration, List_number , 'b-o') #Pass varibles as arguments to plot, with graph style
+
+         plt.pause(0.0001) #pause for interval seconds
+                         # graph figure, will be updated and displayed before the pause (show data ploting live/animation)
+
          
      else:
          number = int (number*3+1) #if number is odd make it even
@@ -52,6 +56,10 @@ while True:
          List_number.append(number) # Add number/value in list, every time
          List_iteration.append(iterations) # Add iteration value/increment in list, every time
          plt.plot(List_iteration, List_number,'b-o') #Pass varibles as arguments to plot, with graph style
+
+         plt.pause(0.0001) #pause for interval seconds
+                         # graph figure, will be updated and displayed before the pause (show data ploting live/animation)
+
          
 
      if (number == 1): # Stop !!
@@ -59,13 +67,6 @@ while True:
          print(" We are in the loop, and the lowest number is one. Every positive integer, if you apply these rules,")
          print(" will eventually end up in the 4, 2, 1 loop. Commonly called Collatz conjecture or 3N+1.")
          print(" And the number you get by applying 3x+1 are called hailstone numbers \n")
-         print(" Iterations: ",iterations ,'\n') 
-         loopcontinue=str(input(' Press enter to see the graph & loop \n')) # just press enter key
-         print(' Close the graph window first !') # close graph window to continue the loop
+         print(" Iterations: ",iterations ,'\n')
          plt.show() # show ploted graph
-
-         #Below line is not necessary
-         print(3*'\n')
-         print(' Loop.... ! \n')
          
-
