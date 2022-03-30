@@ -35,16 +35,18 @@ Iterations :  16
 ```
 
 
-#
-
 The programme follow the rules and a sequence is generated ,were the lowest number is one. the conjecture is: every positive integer, if you apply these rules, will eventually end up in the 4, 2, 1 loop.
-### How 😲
-Here, 1 is odd, multiply by three and add one.</br>
-Which equals 4.</br>
-Even, divide by two, 2, still even.</br>
-Divide by two, 1, odd.</br>
-So, 1 goes to 4, goes to 2, goes to 1.</br>
-we're in loop and the lowest number is 1.</br>
+#
+### How?
+
+Here, **1** is odd, multiply by three and add one.</br>
+Which equals **4**.</br>
+Even, divide by two, **2**, still even.</br>
+Divide by two, **1**, odd.</br>
+So, **1** goes to **4**, goes to **2**, goes to **1**.</br>
+
+We're in loop and the lowest number is **1**.</br>
+#
 
 This is Commonly called the Collatz conjecture, and the numbers obtained by applying **3x+1** are called **hailstone numbers**, beacuse they go up and down like hailstones in a thundercloud, but eventually they all fall down to one.</br>
 
