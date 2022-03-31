@@ -17,7 +17,7 @@ pip install matplotlib
 ```
 #
 
-### Demo ⏯️
+### 1. Demo ⏯️
 
 ```
 
@@ -35,7 +35,7 @@ Iterations :  16
 ```
 
 
-The programme follow the rules and a sequence is generated ,were the lowest number is one. the conjecture is: every positive integer, if you apply these rules, will eventually end up in the 4, 2, 1 loop.
+The [programme](scripts/main.py) follow the rules and a sequence is generated ,were the lowest number is one. the conjecture is: every positive integer, if you apply these rules, will eventually end up in the 4, 2, 1 loop.
 #
 ### How?
 
@@ -61,36 +61,60 @@ The **paths** that different numbers take **vary so widely**, below the graph sh
 
 ## Collatz Conjecture (_infinite_)
 
-The below [programe](infinite_main.py) is written in way that, it will loop itself till infinity.</br>
+The below [programme](scripts/infinite_live_main.py) is written in way that, it will loop itself till infinity.</br>
 It repeats indefinitely, going through all the possible positive integer **(1, 2, 3, 4.....)** one after one, automatically once initiated.</br>
 
-It has all the features and follws the same rules for calculation
+It has all the features and follws the same rules for calculation and plot the graph of generated sequence live</br>
+If the number fall in loop of **4, 2, 1** ,then it returns _True_</br>
+The programme is a bit slow, and might slow down your computer</br>
+cause it plot the line graph for every single number.
 
-### Demo ⏯️
+### 2. Demo ⏯️
 ```
+ Press Ctrl + C any time to quit 
 
-    Press Enter to begin ! 
+ Press Enter to begin ! 
 
-Number :  1
-Iterations :  3 
+ Number :  1 , Iterations :  3 , True  
 
-Next number :  2 
+ Number :  2 , Iterations :  1 , True  
 
-Number :  2
-Iterations :  1 
+ Number :  3 , Iterations :  7 , True  
 
-Next number :  3 
-
-Number :  3
-Iterations :  7 
-
-Next number :  4 
+ Number :  4 , Iterations :  2 , True  
 
   ...........................
   ...................................
 ```
 #
 ![Plotted graph](graphs/collatz-infinite-github.gif)
+#
+
+**This [programme](scripts/infinite_main.py) is an alternate version of above infinite [script](scripts/infinite_live_main.py)** 
+
+It has all the features and follws the same rules for calculation and plot the graph of </br>
+generated sequence when it detect **Keyboard Interrupt** Ctrl + C. 
+The programme is faster then above script, and does not plot graph every single time, only when user command it to plot.
+
+### 3. Demo ⏯️
+```
+ Press Ctrl + C any time to interrupt and to see the plotted graph  
+
+ Press Enter to begin ! 
+
+ Number :  1 , Iterations :  3 , True  
+
+ Number :  2 , Iterations :  1 , True  
+
+ Number :  3 , Iterations :  7 , True  
+
+ Number :  4 , Iterations :  2 , True  
+
+  ...........................
+  ...................................
+```
+#
+![Plotted graph](graphs/collatz-infinite2-github.gif)
 #
 
 
