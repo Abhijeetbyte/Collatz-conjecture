@@ -8,8 +8,8 @@ plt.title('Graph')
 
 #Interaction
 
-print('\n')
-start=str(input('    Press Enter to begin ! \n'))
+print('\n Press Ctrl + C any time to quit \n')
+start=str(input(' Press Enter to begin ! \n'))
 
 #Variables
 
@@ -59,19 +59,19 @@ while True: # First while loop
                                  
              if (number == 1): # Stop ! jump to next number
 
-                 print('Number : ',init_number)# Current number 
-                 print('Iterations : ',iterations, '\n')
-                            
-                 
+                 print(' Number : ',init_number, ', Iterations : ',iterations, ', True ', '\n' )#current number values
+
+                 init_number = init_number + 1 #Next number in sequence (by increment of 1)
                  List_iteration=[0] # reset/empty lists for next round
                  List_number=[0]
                  iterations=int(0)
 
-                 init_number = init_number + 1 #Next number in sequence (by increment of 1)
-                 
-                 print('Next number : ', init_number, '\n')
-  
                  break # exit this loop & go to first while loop
+                
+             elif(number == 0): #conjecture break ! (number !=1), if the previous conditions were not true, then try this condition
+                  print(' Number : ',init_number, ', Iterations : ',iterations, ', False ', '\n' )#current number values
+                  plt.show() # show ploted graph
+                  break # exit while loop
                  
              
             
