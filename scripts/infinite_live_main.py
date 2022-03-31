@@ -6,11 +6,6 @@ plt.xlabel('iteration')
 plt.ylabel('value')
 plt.title('Graph')
 
-#Interaction
-
-print('\n Press Ctrl + C any time to quit \n')
-start=str(input(' Press Enter to begin ! \n'))
-
 #Variables
 
 init_number = 1 # initial positive number
@@ -18,6 +13,20 @@ init_number = 1 # initial positive number
 iterations = int(0) # to count iteration in while loop
 List_iteration= [0] # empty list for  iterations ; list to plot
 List_number= [0] # empty list for  iterations ; list to plot
+
+#Interaction
+print('\n Do you want to start from a specific number [y/n] ?')
+option_number=str(input(' default is 1, enter y or n to continue : '))
+
+if (option_number == 'Y' or option_number == 'y'):
+ 
+    init_number =int(input(' enter the number : '))
+
+print('\n Press Ctrl + C any time to quit \n')
+start=str(input(' Press Enter to begin ! \n'))
+
+    
+
 
 #infinity loop
 
@@ -73,7 +82,4 @@ while True: # First while loop
                   plt.show() # show ploted graph
                   break # exit while loop
                  
-             
-            
-
-             
+       
