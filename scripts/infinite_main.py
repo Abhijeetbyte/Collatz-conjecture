@@ -6,10 +6,6 @@ plt.xlabel('iteration')
 plt.ylabel('value')
 plt.title('Graph')
 
-#Interaction
-
-print('\n Press Ctrl + C any time to interrupt and to see the plotted graph \n')
-start=str(input(' Press Enter to begin ! \n'))
 
 #Variables
 
@@ -19,6 +15,18 @@ iterations = int(0) # to count iteration in while loop
 List_iteration= [0] # empty list for  iterations ; list to plot
 List_number= [0] # empty list for  iterations ; list to plot
 
+#Interaction
+print('\n Do you want to start from a specific number [y/n] ?')
+option_number=str(input(' default is 1, enter y or n to continue : '))
+
+if (option_number == 'Y' or option_number == 'y'):
+ 
+    init_number =int(input(' enter the number : '))
+
+print('\n Press Ctrl + C any time to interrupt and to see the plotted graph \n')
+start=str(input(' Press Enter to begin ! \n'))
+
+    
 
 
 try: # for KeyboardInterrupt code section/block
@@ -75,4 +83,4 @@ except KeyboardInterrupt: # if KeyboardInterrupt occur (Ctrl+C by user end progr
      plt.show() # show ploted graph
      print('\n', ' exit', 4*'\n')
                         
-              
+                 
