@@ -40,6 +40,8 @@ while True:
         List_number.append(num) # Add number/value in list, every time
         List_iteration.append(iterations) # Add iteration value/increment
         plt.plot(List_iteration, List_number , 'b-o') #Pass varibles as arguments to plot, with graph style
+        plt.pause(0.0001) #pause for interval seconds
+                           # graph figure, will be updated and displayed before the pause (show data ploting live/animation)
 
 
      else: 
