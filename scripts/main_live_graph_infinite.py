@@ -64,7 +64,7 @@ while True:
 
 
      elif(num == 0): # conjecture break , alert !
-         print(' Number : ', number -1,', False ', '\n' )
+         print(' Number : ', number, ', False ', '\n' )
          plt.show() # show ploted graph
          break #exit loop          
         
