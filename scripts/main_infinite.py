@@ -11,7 +11,7 @@ option_number=str(input(' default is 1, enter y or n to continue : '))
 
 if (option_number == 'Y' or option_number == 'y'):
  
-    number =int(input(' enter the number : '))
+    number =int(input(' Enter the number : '))
 
 print('\n Press Ctrl + C any time to quit \n')
 start=str(input(' Press Enter to begin ! \n'))
