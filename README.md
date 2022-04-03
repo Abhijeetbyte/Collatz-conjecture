@@ -13,6 +13,7 @@ It also shows values like, number of **iterations** and **graph** of the generat
 ### Dependencies
 * Below is the library that has been used to plot graphs, it should be installed before executing the programme
 ```
+
 pip install matplotlib
 
 ```
@@ -66,13 +67,16 @@ In above demonstration the number is 7. In total, it takes **16 steps/iterations
 The below [programme](scripts/infinite_live_main.py) is written in a way that, it will loop itself to ***infinity***.</br>
 It repeats indefinitely, going through all the possible positive integer **(1, 2, 3, 4.....)** one after one, automatically once initiated.</br>
 
-It has all the features and follws the same rules for calculation and plot the graph of generated sequence live, also ask to the user whether to start from a **given number** or from default, which is ***1***</br>
-If the number falls in the loop of **4, 2, 1** ,then it returns ***True***. If not then returns ***False*** ( not detected yet ) and will go to the next number.</br>
-The programme is a bit slow, and might slow down your computer</br>
-cause it plots the **graph** of every single number.
+It has all the features and follws the same rules for calculation and plot the graph of generated sequence live, also ask to the user whether to start from a **given number** or from default, which is ***1***.</br>
+
+If the number falls in the loop of **4, 2, 1** ,then it returns ***True***.</br>
+If not then returns ***False*** ( not detected yet ) and will go to the next number.</br>
+The programme is a bit slow, and might slow down your computer.
+Since it plots the **graph** of every single number simultaneously.
 
 ### 2. Demo ⏯️
 ```
+
  Do you want to start from a specific number [y/n] ?
  default is 1, enter y or n to continue : n
  
@@ -97,12 +101,14 @@ cause it plots the **graph** of every single number.
 
 **This [programme](scripts/infinite_main.py) is an alternate version of the above infinite [script](scripts/infinite_live_main.py)** 
 
-It has all the features and follows the same rules for calculation and plot the graph of </br>
-generated sequence when it detects **Keyboard Interrupt** Ctrl + C.</br>
-The  Programme  is faster than the above script , and does not **plot graphs** every single time, only when user commands it to plot.
+It has all the features and follows the same rules for calculation and plot the graph of 
+generated sequence when it detects **Keyboard Interrupt** Ctrl+C.</br>
+
+The  Programme  is faster than the above script, and does not **plot graphs** every single time, only when user commands it to plot.
 
 ### 3. Demo ⏯️
 ```
+
  Do you want to start from a specific number [y/n] ?
  default is 1, enter y or n to continue : n
  
