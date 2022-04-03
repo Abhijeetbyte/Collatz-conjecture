@@ -17,9 +17,12 @@ It also shows values like, number of **iterations** and **graph** of the generat
 pip install matplotlib
 
 ```
-#
 
-### 1. Demo ⏯️
+#
+### Collatz Conjecture (_interactive_)
+
+
+### Demo ⏯️
 
 ```
 
@@ -62,9 +65,10 @@ In above demonstration the number is 7. In total, it takes **16 steps/iterations
 #
 
 
-## Collatz Conjecture (_infinite_)
+### Collatz Conjecture (_infinite_)
+</br>
 
-The below [programme](scripts/infinite_live_main.py) is written in a way that, it will loop itself to ***infinity***.</br>
+**( 1 )** The below [programme](scripts/main_live_graph_infinite.py) is written in a way that, it will loop itself to ***infinity***.</br>
 It repeats indefinitely, going through all the possible positive integer **(1, 2, 3, 4.....)** one after one, automatically once initiated.</br>
 
 It has all the features and follws the same rules for calculation and plot the graph of generated sequence live, also ask to the user whether to start from a **given number** or from default, which is ***1***.</br>
@@ -74,7 +78,7 @@ If not then returns ***False*** ( not detected yet ) and will go to the next num
 The programme is a bit slow, and might slow down your computer.
 Since it plots the **graph** of every single number simultaneously.
 
-### 2. Demo ⏯️
+### Demo ⏯️
 ```
 
  Do you want to start from a specific number [y/n] ?
@@ -98,15 +102,17 @@ Since it plots the **graph** of every single number simultaneously.
 #
 ![Plotted graph](graphs/collatz-infinite-github.gif)
 #
+</br>
 
-**This [programme](scripts/infinite_main.py) is an alternate version of the above infinite [script](scripts/infinite_live_main.py)** 
+
+**( 2 ) This [programme](scripts/main_graph_infinite.py) is an alternate version of the above infinite script.**</br>
 
 It has all the features and follows the same rules for calculation and plot the graph of 
 generated sequence when it detects **Keyboard Interrupt** Ctrl+C.</br>
 
 The  Programme  is faster than the above script, and does not **plot graphs** every single time, only when user commands it to plot.
 
-### 3. Demo ⏯️
+### Demo ⏯️
 ```
 
  Do you want to start from a specific number [y/n] ?
@@ -126,10 +132,46 @@ The  Programme  is faster than the above script, and does not **plot graphs** ev
 
   ...........................
   ...................................
+
+  Keyboard Interrupt is caught ! 
+
+  Please wait, showing graph..... 
+
+
+  exit 
+
 ```
 #
 ![Plotted graph](graphs/collatz-infinite2-github.gif)
 #
+</br>
+
+**( 3 ) This [script](scripts/main_infinite.py) is design to maximize the effecieny of computer while doing the computation.**</br>
+It has all the features except graph plotting, and follows the same rules for calculation</br>
+The  Programme  is faster than all the above scripts, and does not **plot graphs** at all, only stops when the programme returns ***False*** or the Conjecture **breaks**.
+### Demo ⏯️
+```
+
+ Do you want to start from a specific number [y/n] ?
+ default is 1, enter y or n to continue : n
+ 
+ Press Ctrl + C any time to quit 
+
+ Press Enter to begin ! 
+
+ Number :  1 , Iterations :  3 , True  
+
+ Number :  2 , Iterations :  1 , True  
+
+ Number :  3 , Iterations :  7 , True  
+
+ Number :  4 , Iterations :  2 , True  
+
+  ...........................
+  ...................................
+```
+
+
 
 
 # License
