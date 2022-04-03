@@ -35,6 +35,6 @@ while True:
         num = number
 
      elif(num == 0): # conjecture break , alert!
-         print(' Number : ', number -1,', False ', '\n' )
+         print(' Number : ', number,', False ', '\n' )
          break #exit loop
 
