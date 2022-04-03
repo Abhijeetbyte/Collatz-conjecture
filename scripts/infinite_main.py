@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 
+
 #Graph setup
 
 plt.xlabel('iteration')
@@ -9,11 +10,12 @@ plt.title('Graph')
 
 #Variables
 
-init_number = 1 # initial positive number
+number = 1 # initial positive number
+iterations = 0 # to count iteration 
+List_iteration= [0] # lists to plot
+List_number= [0]
 
-iterations = int(0) # to count iteration in while loop
-List_iteration= [0] # empty list for  iterations ; list to plot
-List_number= [0] # empty list for  iterations ; list to plot
+
 
 #Interaction
 print('\n Do you want to start from a specific number [y/n] ?')
@@ -21,63 +23,51 @@ option_number=str(input(' default is 1, enter y or n to continue : '))
 
 if (option_number == 'Y' or option_number == 'y'):
  
-    init_number =int(input(' enter the number : '))
+    number =int(input(' Enter the number : '))
 
 print('\n Press Ctrl + C any time to interrupt and to see the plotted graph \n')
 start=str(input(' Press Enter to begin ! \n'))
 
-    
+num = number  
 
 
-try: # for KeyboardInterrupt code section/block
+try: #for KeyboardInterrupt code section/block
 
-     #infinity loop
-
-     while True: # First while loop
-
-          if (init_number > init_number - 1):# if init number changes or greater then before
-
-              number = init_number # pass value to local varible for calculation
-
-
-              while True:
-                  
-                  if (number%2) == 0: #modulus operator to get the remainder
-                       
-                      number = int (number/2)    #if number is even make it odd
+    while True:
      
-                      iterations = iterations +1 # Increment
-                      
-                      List_number.append(number) # Add number/value in list, every time
-                      List_iteration.append(iterations) # Add iteration value/increment in list, every time
-                      plt.plot(List_iteration, List_number , 'b-o') #Pass varibles as arguments to plot, with graph style
-                   
-                  else:
-                      number = int (number*3+1) #if number is odd make it even
-                      
-                      iterations = iterations +1 # Increment
-                      
-                      List_number.append(number) # Add number/value in list, every time
-                      List_iteration.append(iterations) # Add iteration value/increment in list, every time
-                      plt.plot(List_iteration, List_number, 'b-o') #Pass varibles as arguments to plot, with graph style
-                                      
-                  if (number == 1): # Stop ! jump to next number
+         if(num%2) == 0:  #if number is even make it odd
+            num = int(num/2)
+            iterations += 1 #increment
 
-                      print(' Number : ',init_number, ', Iterations : ',iterations, ', True ', '\n' )#current number values
+            List_number.append(num) # Add number/value in list, every time
+            List_iteration.append(iterations) # Add iteration value/increment
+            plt.plot(List_iteration, List_number , 'b-o') #Pass varibles as arguments to plot, with graph style
 
-                      init_number = init_number + 1 #Next number in sequence (by increment of 1)
-                      List_iteration=[0] # reset/empty lists for next round
-                      List_number=[0]
-                      iterations=int(0)
 
-                      break # exit this loop & go to first while loop
-                    
-                  elif(number == 0): #conjecture break ! (number !=1), if the previous conditions were not true, then try this condition
-                       print(' Number : ',init_number, ', Iterations : ',iterations, ', False ', '\n' )#current number values
-                       plt.show() # show ploted graph
-                       break # exit while loop
+         else: 
+             num = int(num*3+1)  #if number is odd make it even
+             iterations += 1
 
-               
+             List_number.append(num) # Add number value in list, every time
+             List_iteration.append(iterations) #iteration
+             plt.plot(List_iteration, List_number , 'b-o') #Pass varibles as arguments to plot, with graph style
+
+     
+         if(num == 1): #Next number !
+            print(' Number : ',number, ', Iterations : ',iterations, ', True ', '\n' )
+            number += 1 #increment
+            iterations=0
+            num = number
+
+            List_iteration=[0] # reset/empty lists for next round
+            List_number=[0]
+
+
+         elif(num == 0): # conjecture break , alert !
+             print(' Number : ', number -1,', False ', '\n' )
+             break #exit loop
+
+              
 except KeyboardInterrupt: # if KeyboardInterrupt occur (Ctrl+C by user end programme)
      print(3*'\n', ' Keyboard Interrupt is caught !' , 2*'\n' ,' Please wait, showing graph.....' , 2*'\n')
      plt.show() # show ploted graph
