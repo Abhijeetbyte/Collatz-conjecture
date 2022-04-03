@@ -36,5 +36,6 @@ while True:
 
      elif(num == 0): # conjecture break , alert!
          print(' Number : ', number,', False ', '\n' )
+         end=str(input(' Press Enter to close \n')) #wait for input, prevent from auto close.
          break #exit loop
 
