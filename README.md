@@ -172,10 +172,13 @@ The  Programme  is faster than all the above scripts, and does not **plot graphs
 ```
 
 
-
+## Reporting Issues
+Feel free to report [issues](https://github.com/Abhijeetbyte/Collatz-conjecture/issues/new)
 
 # License
 
 Copyright © Abhijeet Kumar. All rights reserved.
 
 Licensed under the [MIT License.](LICENSE) 
+
+
