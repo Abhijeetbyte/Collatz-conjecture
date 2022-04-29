@@ -69,7 +69,7 @@ In above demonstration the number is 7. In total, it takes **16 steps/iterations
 </br>
 
 **( 1 )** The below [programme](scripts/main_live_graph_infinite.py) is written in a way that, it will loop itself to ***infinity***.</br>
-It repeats indefinitely, going through all the possible positive integer **(1, 2, 3, 4.....)** one after one, automatically once initiated.</br>
+It repeats indefinitely, going through all the possible positive whole number **(1, 2, 3, 4.....)** one after one, automatically once initiated.</br>
 
 It has all the features and follws the same rules for calculation and plot the graph of generated sequence live, also ask to the user whether to start from a **given number** or from default, which is ***1***.</br>
 
