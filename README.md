@@ -110,7 +110,7 @@ Since it plots the **graph** of every single number simultaneously.
 It has all the features and follows the same rules for calculation and plot the graph of 
 generated sequence when it detects **Keyboard Interrupt** Ctrl+C.</br>
 
-The  Programme  is faster than the above script, and does not **plot graphs** every single time, only when user commands it to plot.
+The  Programme is faster than the above script, since it does not **plot graphs** every single time, only when user commands it to plot.
 
 ### Demo ⏯️
 ```
@@ -146,9 +146,8 @@ The  Programme  is faster than the above script, and does not **plot graphs** ev
 #
 </br>
 
-**( 3 ) This [script](scripts/main_infinite.py) is design to maximize the effecieny of computer while doing the computation.**</br>
-It has all the features except graph plotting, and follows the same rules for calculation</br>
-The  Programme  is faster than all the above scripts, and does not **plot graphs** at all, only stops when the programme returns ***False*** or the Conjecture **breaks**.
+**( 3 ) This [programme](scripts/main_infinite.py).** has all the features except graph plotting, and follows the same rules for calculation.</br>
+The script is bit more faster than all the above scripts, since it does not **plot graphs** at all, only stops when the programme returns ***False*** or the Conjecture **breaks**.
 ### Demo ⏯️
 ```
 
