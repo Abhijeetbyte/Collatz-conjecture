@@ -73,7 +73,7 @@ In above demonstration the number is 7. In total, it takes **16 steps/iterations
 ### Collatz Conjecture (_infinite_)
 </br>
 
-**( 1 )** The below [programme](scripts/main_live_graph_infinite.py) is written in a way that, it will loop itself to ***infinity***.</br>
+**[ 1 ]** The below **[programme](scripts/main_live_graph_infinite.py)** is written in a way that, it will loop itself to ***infinity***.</br>
 It repeats indefinitely, going through all the possible positive whole number **(1, 2, 3, 4.....)** one after one, automatically once initiated.</br>
 
 It has all the features and follws the same rules for calculation and plot the graph of generated sequence live, also ask to the user whether to start from a **given number** or from default, which is ***1***.</br>
@@ -90,7 +90,7 @@ Since it plots the **graph** of every single number simultaneously.
 </br>
 
 
-**( 2 ) This [programme](scripts/main_graph_infinite.py) is an alternate version of the above infinite script.**</br>
+**[ 2 ] This [programme](scripts/main_graph_infinite.py) is an alternate version of the above infinite script.**</br>
 
 It has all the features and follows the same rules for calculation and plot the graph of 
 generated sequence when it detects **Keyboard Interrupt** Ctrl+C.</br>
@@ -104,8 +104,8 @@ The  Programme is faster than the above script, since it does not **plot graphs*
 #
 </br>
 
-**( 3 ) This [programme](scripts/main_infinite.py).** has all the features except graph plotting, and follows the same rules for calculation.</br>
-The script is bit more faster than all the above scripts, since it does not **plot graphs** at all, only stops when the programme returns ***False*** or the Conjecture **breaks**.
+**[ 3 ] This [programme](scripts/main_infinite.py).** has all the features except graph plotting, and follows the same rules for calculation.</br>
+The script is bit more faster than all the above scripts, since it does not **plot graphs** at all, only stops when the programme returns ***False*** or the Conjecture **breaks**.</br>
 
 
 ## Reporting Issues
