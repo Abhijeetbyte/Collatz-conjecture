@@ -68,7 +68,7 @@ In above demonstration the number is 7. In total, it takes **16 steps/iterations
 #
 ![Plotted graph](graphs/collatz-github.gif)
 #
-
+#
 
 ### Collatz Conjecture (_infinite_)
 </br>
@@ -83,27 +83,7 @@ If not then returns ***False*** ( not detected yet ) and will go to the next num
 The programme is a bit slow, and might slow down your computer.
 Since it plots the **graph** of every single number simultaneously.
 
-### Demo ⏯️
-```
-
- Do you want to start from a specific number [y/n] ?
- default is 1, enter y or n to continue : n
- 
- Press Ctrl + C any time to quit 
-
- Press Enter to begin ! 
-
- Number :  1 , Iterations :  3 , True  
-
- Number :  2 , Iterations :  1 , True  
-
- Number :  3 , Iterations :  7 , True  
-
- Number :  4 , Iterations :  2 , True  
-
-  ...........................
-  ...................................
-```
+### ⏯️
 #
 ![Plotted graph](graphs/collatz-infinite-github.gif)
 #
@@ -117,35 +97,8 @@ generated sequence when it detects **Keyboard Interrupt** Ctrl+C.</br>
 
 The  Programme is faster than the above script, since it does not **plot graphs** every single time, only when user commands it to plot.
 
-### Demo ⏯️
-```
+### ⏯️
 
- Do you want to start from a specific number [y/n] ?
- default is 1, enter y or n to continue : n
- 
- Press Ctrl + C any time to interrupt and to see the plotted graph  
-
- Press Enter to begin ! 
-
- Number :  1 , Iterations :  3 , True  
-
- Number :  2 , Iterations :  1 , True  
-
- Number :  3 , Iterations :  7 , True  
-
- Number :  4 , Iterations :  2 , True  
-
-  ...........................
-  ...................................
-
-  Keyboard Interrupt is caught ! 
-
-  Please wait, showing graph..... 
-
-
-  exit 
-
-```
 #
 ![Plotted graph](graphs/collatz-infinite2-github.gif)
 #
@@ -153,27 +106,6 @@ The  Programme is faster than the above script, since it does not **plot graphs*
 
 **( 3 ) This [programme](scripts/main_infinite.py).** has all the features except graph plotting, and follows the same rules for calculation.</br>
 The script is bit more faster than all the above scripts, since it does not **plot graphs** at all, only stops when the programme returns ***False*** or the Conjecture **breaks**.
-### Demo ⏯️
-```
-
- Do you want to start from a specific number [y/n] ?
- default is 1, enter y or n to continue : n
- 
- Press Ctrl + C any time to quit 
-
- Press Enter to begin ! 
-
- Number :  1 , Iterations :  3 , True  
-
- Number :  2 , Iterations :  1 , True  
-
- Number :  3 , Iterations :  7 , True  
-
- Number :  4 , Iterations :  2 , True  
-
-  ...........................
-  ...................................
-```
 
 
 ## Reporting Issues
