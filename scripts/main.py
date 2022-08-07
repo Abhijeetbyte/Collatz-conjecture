@@ -32,7 +32,7 @@ List_number= [0] # empty list for  iterations ; list to plot
 
 while True:
 
-     if (number%2) == 0: #modulus operator to get the remainder
+     if (number%2) == 0: #modulo operator to get the remainder
           
          number = int (number/2)    #if number is even make it odd
          print("          ",number)
