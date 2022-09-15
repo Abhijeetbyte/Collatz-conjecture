@@ -107,6 +107,8 @@ The  Programme is faster than the above script, since it does not **plot graphs*
 **[ 3 ]** This [programme](scripts/main_infinite.py) has all the features except graph plotting, and follows the same rules for calculation.</br>
 The script is bit more faster than all the above scripts, since it does not **plot graphs** at all, only stops when the programme returns ***False*** or the Conjecture **breaks**.</br>
 
+**[ 4 ]** This [programme](scripts/main_inf_restart.py) has two additional features while still lacking graph plotting. The first feature is writing all numbers in a sequence to a [text file](scripts/main_num.txt), then checking that file each iteration. This allows an increase in speed by skipping numbers that have previously appeared in a sequence, as well as terminating a sequence that converges on a previous sequence. The second feature is that the programme will record numbers with a sequence of 1 or more to another [text file](scripts/main_seq.txt), and then when the programm is run later, it will read the last sequence and start from the next number, allowing for continuous progress.</br>
+
 
 ## Reporting Issues
 Feel free to report [issues](https://github.com/Abhijeetbyte/Collatz-conjecture/issues/new)
